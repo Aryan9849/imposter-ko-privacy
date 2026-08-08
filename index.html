@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Privacy Policy — Imposter Ko?</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for Imposter Ko? by StaticVerse."
+  />
+
+  <meta name="theme-color" content="#170B10" />
+
+  <style>
+    :root {
+      --bg: #0b0709;
+      --bg-soft: #12090d;
+      --surface: #171015;
+      --surface-2: #1d1419;
+      --surface-3: #24191f;
+
+      --cream: #fff6e9;
+      --cream-soft: #eadfd3;
+      --muted: #a99ba0;
+      --muted-2: #81747a;
+
+      --crimson: #8f243f;
+      --crimson-light: #d94b69;
+      --crimson-soft: rgba(217, 75, 105, 0.12);
+
+      --saffron: #e6ad4b;
+      --saffron-soft: rgba(230, 173, 75, 0.12);
+
+      --line: rgba(255, 246, 233, 0.09);
+      --line-strong: rgba(255, 246, 233, 0.14);
+
+      --max-width: 1120px;
+      --content-width: 820px;
+
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+
+      --shadow:
+        0 30px 80px rgba(0, 0, 0, 0.38);
+
+      --serif:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      --sans:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at 80% 0%,
+          rgba(143, 36, 63, 0.16),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(230, 173, 75, 0.05),
+          transparent 25%
+        ),
+        var(--bg);
+
+      color: var(--cream-soft);
+      font-family: var(--sans);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+      background: rgba(217, 75, 105, 0.3);
+      color: white;
+    }
+
+    a {
+      color: var(--saffron);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(230, 173, 75, 0.3);
+      transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: #ffd27d;
+      border-color: #ffd27d;
+    }
+
+    /* --------------------------------
+       TOP NAV
+    -------------------------------- */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      width: 100%;
+
+      background:
+        rgba(11, 7, 9, 0.82);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+
+      min-height: 72px;
+
+      padding:
+        0 28px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      color: var(--cream);
+      border: 0;
+    }
+
+    .brand:hover {
+      color: var(--cream);
+      border: 0;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+
+      border-radius: 12px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--crimson),
+          #5e182c
+        );
+
+      border: 1px solid
+        rgba(217, 75, 105, 0.45);
+
+      box-shadow:
+        0 8px 25px rgba(143, 36, 63, 0.25);
+
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-title {
+      color: var(--cream);
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-subtitle {
+      margin-top: 3px;
+
+      color: var(--muted-2);
+      font-size: 10px;
+      font-weight: 700;
+
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .effective-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 12px;
+
+      border: 1px solid var(--line);
+      border-radius: 999px;
+
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.02);
+
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .effective-dot {
+      width: 6px;
+      height: 6px;
+
+      border-radius: 50%;
+
+      background: var(--saffron);
+      box-shadow: 0 0 10px rgba(230, 173, 75, 0.7);
+    }
+
+    /* --------------------------------
+       HERO
+    -------------------------------- */
+
+    .hero-wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+
+      padding:
+        72px 28px 48px;
+    }
+
+    .hero {
+      position: relative;
+
+      overflow: hidden;
+
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(143, 36, 63, 0.18),
+          rgba(23, 16, 21, 0.92) 55%
+        );
+
+      box-shadow: var(--shadow);
+
+      padding:
+        56px;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 300px;
+      height: 300px;
+
+      right: -100px;
+      top: -120px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(230, 173, 75, 0.14),
+          transparent 65%
+        );
+
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      right: 80px;
+      bottom: -110px;
+
+      border-radius: 50%;
+
+      border: 1px solid
+        rgba(230, 173, 75, 0.08);
+
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 7px 11px;
+
+      border-radius: 999px;
+
+      background: var(--crimson-soft);
+      border: 1px solid
+        rgba(217, 75, 105, 0.18);
+
+      color: var(--crimson-light);
+
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+
+      margin-top: 20px;
+
+      color: var(--cream);
+
+      font-family: var(--serif);
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -2.5px;
+    }
+
+    .hero h1 span {
+      color: var(--crimson-light);
+    }
+
+    .hero-description {
+      position: relative;
+      z-index: 1;
+
+      max-width: 670px;
+
+      margin-top: 22px;
+
+      color: var(--muted);
+
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-meta {
+      position: relative;
+      z-index: 1;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      margin-top: 30px;
+    }
+
+    .meta-item {
+      padding: 8px 12px;
+
+      border-radius: 10px;
+
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--line);
+
+      color: var(--muted);
+
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .meta-item strong {
+      color: var(--cream-soft);
+    }
+
+    /* --------------------------------
+       MAIN LAYOUT
+    -------------------------------- */
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+
+      padding:
+        0 28px 80px;
+
+      display: grid;
+
+      grid-template-columns:
+        220px
+        minmax(0, var(--content-width));
+
+      gap: 54px;
+
+      align-items: start;
+    }
+
+    /* --------------------------------
+       SIDEBAR
+    -------------------------------- */
+
+    .sidebar {
+      position: sticky;
+      top: 96px;
+
+      padding: 18px;
+
+      border: 1px solid var(--line);
+      border-radius: 20px;
+
+      background:
+        rgba(255, 255, 255, 0.018);
+    }
+
+    .sidebar-label {
+      color: var(--muted-2);
+
+      font-size: 9px;
+      font-weight: 900;
+
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+
+      margin-bottom: 12px;
+    }
+
+    .sidebar a {
+      display: block;
+
+      padding: 7px 9px;
+
+      border: 0;
+      border-radius: 8px;
+
+      color: var(--muted);
+
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    .sidebar a:hover {
+      color: var(--cream);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    /* --------------------------------
+       POLICY CONTENT
+    -------------------------------- */
+
+    .policy {
+      min-width: 0;
+    }
+
+    .policy-intro {
+      margin-bottom: 50px;
+
+      padding: 24px 26px;
+
+      border-left:
+        3px solid var(--saffron);
+
+      border-radius:
+        0 16px 16px 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(230, 173, 75, 0.06),
+          transparent
+        );
+
+      color: var(--cream-soft);
+    }
+
+    .policy section {
+      scroll-margin-top: 100px;
+
+      margin-bottom: 48px;
+    }
+
+    .policy h2 {
+      position: relative;
+
+      margin-bottom: 18px;
+
+      color: var(--cream);
+
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: 900;
+
+      letter-spacing: -0.5px;
+    }
+
+    .policy h2::before {
+      content: "";
+
+      display: inline-block;
+
+      width: 22px;
+      height: 3px;
+
+      margin-right: 10px;
+
+      vertical-align: middle;
+
+      border-radius: 999px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--crimson-light),
+          var(--saffron)
+        );
+    }
+
+    .policy h3 {
+      margin-top: 26px;
+      margin-bottom: 10px;
+
+      color: var(--cream-soft);
+
+      font-size: 16px;
+      font-weight: 850;
+    }
+
+    .policy p {
+      margin-bottom: 16px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .policy strong {
+      color: var(--cream-soft);
+      font-weight: 800;
+    }
+
+    .policy ul,
+    .policy ol {
+      margin:
+        12px 0 20px 22px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .policy li {
+      margin-bottom: 7px;
+      padding-left: 4px;
+    }
+
+    .policy ul li::marker {
+      color: var(--crimson-light);
+    }
+
+    .policy ol li::marker {
+      color: var(--saffron);
+      font-weight: 800;
+    }
+
+    .policy hr {
+      border: 0;
+
+      height: 1px;
+
+      margin: 50px 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--line-strong),
+          transparent
+        );
+    }
+
+    /* --------------------------------
+       FEATURE CARDS
+    -------------------------------- */
+
+    .feature-list {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 12px;
+
+      margin: 22px 0 28px;
+    }
+
+    .feature-card {
+      padding: 20px;
+
+      border: 1px solid var(--line);
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.012)
+        );
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-2px);
+
+      border-color:
+        rgba(217, 75, 105, 0.28);
+    }
+
+    .feature-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card strong {
+      display: block;
+
+      margin-bottom: 5px;
+
+      color: var(--cream);
+
+      font-size: 14px;
+    }
+
+    .feature-card span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* --------------------------------
+       GOOGLE / THIRD PARTY CARDS
+    -------------------------------- */
+
+    .service-card {
+      margin: 18px 0;
+
+      padding: 20px;
+
+      border: 1px solid var(--line);
+      border-radius: 18px;
+
+      background: var(--surface);
+    }
+
+    .service-card-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-bottom: 8px;
+
+      color: var(--cream);
+
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .service-dot {
+      width: 9px;
+      height: 9px;
+
+      border-radius: 50%;
+
+      background: var(--saffron);
+    }
+
+    /* --------------------------------
+       CONTACT CARD
+    -------------------------------- */
+
+    .contact-card {
+      position: relative;
+
+      overflow: hidden;
+
+      margin-top: 24px;
+
+      padding: 28px;
+
+      border:
+        1px solid
+        rgba(217, 75, 105, 0.2);
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(143, 36, 63, 0.18),
+          rgba(23, 16, 21, 0.7)
+        );
+    }
+
+    .contact-card::after {
+      content: "✦";
+
+      position: absolute;
+
+      right: 25px;
+      top: 15px;
+
+      color:
+        rgba(230, 173, 75, 0.16);
+
+      font-size: 80px;
+    }
+
+    .contact-card h3 {
+      position: relative;
+      z-index: 1;
+
+      margin: 0 0 8px;
+
+      color: var(--cream);
+      font-size: 18px;
+    }
+
+    .contact-card p {
+      position: relative;
+      z-index: 1;
+
+      margin: 0;
+    }
+
+    /* --------------------------------
+       FOOTER
+    -------------------------------- */
+
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+
+      padding:
+        35px 28px 55px;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      color: var(--cream);
+
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .footer-copy {
+      margin-top: 5px;
+
+      color: var(--muted-2);
+
+      font-size: 11px;
+    }
+
+    .footer-right {
+      color: var(--muted-2);
+
+      font-size: 11px;
+      text-align: right;
+    }
+
+    /* --------------------------------
+       MOBILE
+    -------------------------------- */
+
+    @media (max-width: 900px) {
+      .page {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .sidebar {
+        position: relative;
+        top: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px;
+
+        padding: 10px;
+      }
+
+      .sidebar-label {
+        width: 100%;
+        margin: 3px 8px 5px;
+      }
+
+      .sidebar a {
+        width: auto;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .topbar-inner {
+        min-height: 64px;
+        padding: 0 18px;
+      }
+
+      .effective-pill {
+        display: none;
+      }
+
+      .hero-wrap {
+        padding:
+          32px 16px 30px;
+      }
+
+      .hero {
+        padding: 32px 24px;
+        border-radius: 22px;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+        letter-spacing: -1.8px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .page {
+        padding:
+          0 16px 60px;
+      }
+
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+
+      .policy section {
+        margin-bottom: 40px;
+      }
+
+      .policy h2 {
+        font-size: 21px;
+      }
+
+      .policy p,
+      .policy ul,
+      .policy ol {
+        font-size: 13.5px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-right {
+        text-align: left;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================================
+       NAVIGATION
+  ================================= -->
+
+  <header class="topbar">
+    <div class="topbar-inner">
+
+      <a
+        href="#top"
+        class="brand"
+        aria-label="Imposter Ko Privacy Policy"
+      >
+
+        <div class="brand-mark">
+          ?
+        </div>
+
+        <div class="brand-name">
+          <div class="brand-title">
+            IMPOSTER KO?
+          </div>
+
+          <div class="brand-subtitle">
+            StaticVerse
+          </div>
+        </div>
+
+      </a>
+
+      <div class="effective-pill">
+        <span class="effective-dot"></span>
+        Effective August 8, 2026
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ================================
+       HERO
+  ================================= -->
+
+  <main id="top">
+
+    <div class="hero-wrap">
+
+      <div class="hero">
+
+        <div class="eyebrow">
+          PRIVACY &amp; TRUST
+        </div>
+
+        <h1>
+          Privacy<br />
+          <span>Policy.</span>
+        </h1>
+
+        <p class="hero-description">
+          This Privacy Policy explains how information is handled
+          when you download and use Imposter Ko?. We designed
+          Imposter Ko? as a local, pass-the-phone party game.
+        </p>
+
+        <div class="hero-meta">
+
+          <div class="meta-item">
+            <strong>Application:</strong>
+            Imposter Ko?
+          </div>
+
+          <div class="meta-item">
+            <strong>Developer:</strong>
+            StaticVerse
+          </div>
+
+          <div class="meta-item">
+            <strong>Platform:</strong>
+            Android
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================================
+         CONTENT
+    ================================= -->
+
+    <div class="page">
+
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+
+        <div class="sidebar-label">
+          On this page
+        </div>
+
+        <a href="#about">
+          1. About Imposter Ko?
+        </a>
+
+        <a href="#collection">
+          2. Information We Collect
+        </a>
+
+        <a href="#local">
+          3. Information Stored
+        </a>
+
+        <a href="#not-collect">
+          4. Information We Don't Collect
+        </a>
+
+        <a href="#ads">
+          5. Advertising
+        </a>
+
+        <a href="#choices">
+          6. Privacy Choices
+        </a>
+
+        <a href="#internet">
+          7. Internet Connection
+        </a>
+
+        <a href="#sharing">
+          8. Sharing
+        </a>
+
+        <a href="#retention">
+          9. Data Retention
+        </a>
+
+        <a href="#deletion">
+          10. Data Deletion
+        </a>
+
+        <a href="#children">
+          11. Children's Privacy
+        </a>
+
+        <a href="#security">
+          12. Security
+        </a>
+
+        <a href="#international">
+          13. International Processing
+        </a>
+
+        <a href="#rights">
+          14. Your Rights
+        </a>
+
+        <a href="#california">
+          15. California Rights
+        </a>
+
+        <a href="#eea">
+          16. EEA &amp; UK
+        </a>
+
+        <a href="#third-party">
+          17. Third Parties
+        </a>
+
+        <a href="#changes">
+          18. Changes
+        </a>
+
+        <a href="#contact">
+          19. Contact
+        </a>
+
+        <a href="#about-game">
+          20. About the Game
+        </a>
+
+      </aside>
+
+
+      <!-- POLICY -->
+
+      <article class="policy">
+
+        <div class="policy-intro">
+
+          <strong>Effective Date: August 8, 2026</strong>
+
+          <br />
+
+          <strong>Application:</strong>
+          Imposter Ko?
+
+          <br />
+
+          <strong>Developer / Service Provider:</strong>
+          StaticVerse
+
+          <br />
+
+          <strong>Contact:</strong>
+          <a href="mailto:staticverse7@gmail.com">
+            staticverse7@gmail.com
+          </a>
+
+          <br /><br />
+
+          StaticVerse ("we", "us", or "our") operates the
+          <strong>Imposter Ko?</strong> mobile application
+          (the "Application").
+
+          This Privacy Policy explains how information is handled
+          when you download and use Imposter Ko?.
+
+          We designed Imposter Ko? as a local, pass-the-phone
+          party game. The Application does not require you to
+          create an account or provide your name, email address,
+          phone number, or other personal information in order
+          to play.
+
+          By using the Application, you acknowledge the practices
+          described in this Privacy Policy.
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section id="about">
+
+          <h2>1. About Imposter Ko?</h2>
+
+          <p>
+            Imposter Ko? is a multiplayer party game designed to
+            be played by people together in the same room using
+            one Android device.
+          </p>
+
+          <p>
+            The Application includes features such as:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Normal Game Mode</strong> — play the classic
+              Imposter game.
+            </li>
+
+            <li>
+              <strong>Custom Mode</strong> — create your own secret
+              word and hint.
+            </li>
+
+            <li>
+              <strong>Tournament Mode</strong> — play multiple
+              rounds, earn points, and track tournament scores.
+            </li>
+
+            <li>
+              <strong>Country-Specific Word Packs</strong> — use
+              word packs designed around different regions,
+              including Nepal, India, and Global content.
+            </li>
+
+            <li>
+              <strong>Pass-the-Phone Gameplay</strong> — players
+              use the same device and privately view their roles
+              and words.
+            </li>
+          </ul>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section id="collection">
+
+          <h2>2. Information We Collect</h2>
+
+          <h3>2.1 Information You Provide Directly</h3>
+
+          <p>
+            Imposter Ko? does not require you to create an account.
+          </p>
+
+          <p>
+            You may voluntarily enter information into the
+            Application while playing, such as:
+          </p>
+
+          <ul>
+            <li>Player names or nicknames</li>
+            <li>Custom secret words</li>
+            <li>Custom hints</li>
+            <li>Tournament player names</li>
+            <li>Game settings and selections</li>
+          </ul>
+
+          <p>
+            This information is used to provide the game's
+            functionality.
+          </p>
+
+          <p>
+            For example, player names are used to identify players
+            during a game and tournament, while custom words and
+            hints are used to create a custom game.
+          </p>
+
+          <p>
+            We do not require you to provide your real name or
+            other identifying information.
+          </p>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section id="local">
+
+          <h2>3. Information Stored on Your Device</h2>
+
+          <p>
+            The Application may store certain game and application
+            settings locally on your Android device.
+          </p>
+
+          <p>
+            This may include information such as:
+          </p>
+
+          <ul>
+            <li>Game settings</li>
+            <li>Selected region or word packs</li>
+            <li>Player names entered for gameplay</li>
+            <li>Custom game settings</li>
+            <li>Tournament scores and tournament state</li>
+            <li>Game preferences</li>
+            <li>
+              Other information required for the Application to
+              function correctly
+            </li>
+          </ul>
+
+          <p>
+            This local information is used to maintain the
+            Application's functionality between screens or
+            sessions.
+          </p>
+
+          <p>
+            The Application uses local device storage rather than
+            requiring an account or our own online database for
+            normal gameplay.
+          </p>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section id="not-collect">
+
+          <h2>4. Information We Do Not Intentionally Collect</h2>
+
+          <p>
+            Except where information may be automatically
+            processed by third-party services described in this
+            Privacy Policy, StaticVerse does not intentionally
+            collect through Imposter Ko?:
+          </p>
+
+          <ul>
+            <li>Your real name</li>
+            <li>Email address</li>
+            <li>Phone number</li>
+            <li>Postal address</li>
+            <li>Contacts</li>
+            <li>Photos or videos</li>
+            <li>Camera recordings</li>
+            <li>Microphone recordings</li>
+            <li>Precise location</li>
+            <li>GPS information</li>
+            <li>Health information</li>
+            <li>Financial information</li>
+            <li>Passwords</li>
+            <li>Social media account credentials</li>
+          </ul>
+
+          <p>
+            The Application does not require an account or
+            registration to play.
+          </p>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section id="ads">
+
+          <h2>5. Advertising and Third-Party Services</h2>
+
+          <p>
+            Imposter Ko? uses <strong>Google AdMob</strong> to
+            display advertisements.
+          </p>
+
+          <p>
+            Because advertisements are provided by Google and its
+            advertising technology, Google and its advertising
+            partners may process certain information from your
+            device in order to provide, measure, protect, and
+            improve advertising services.
+          </p>
+
+          <p>
+            Depending on Google's services and applicable
+            settings, this may include information such as:
+          </p>
+
+          <ul>
+            <li>Advertising identifiers</li>
+            <li>Device and application information</li>
+            <li>IP address</li>
+            <li>
+              Approximate location derived from network
+              information
+            </li>
+            <li>
+              Information about interactions with advertisements
+            </li>
+            <li>
+              Diagnostics and other information necessary for
+              advertising and fraud prevention
+            </li>
+          </ul>
+
+          <p>
+            The information processed by Google may be governed by
+            Google's own privacy policies and terms.
+          </p>
+
+          <div class="service-card">
+
+            <div class="service-card-title">
+              <span class="service-dot"></span>
+              Google Privacy Policy
+            </div>
+
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://policies.google.com/privacy
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-card-title">
+              <span class="service-dot"></span>
+              Google Partner Sites &amp; Apps
+            </div>
+
+            <a
+              href="https://policies.google.com/technologies/partner-sites"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://policies.google.com/technologies/partner-sites
+            </a>
+
+          </div>
+
+          <p>
+            We do not sell your personal information ourselves.
+          </p>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section id="choices">
+
+          <h2>6. Advertising Personalization and Privacy Choices</h2>
+
+          <p>
+            Google may provide personalized or non-personalized
+            advertising depending on applicable settings, consent
+            requirements, regional requirements, and Google's
+            advertising systems.
+          </p>
+
+          <p>
+            Where required by applicable law, appropriate consent
+            or privacy choices may be presented through Google's
+            advertising consent mechanisms.
+          </p>
+
+          <p>
+            You may also manage certain advertising and privacy
+            settings through your Android device and your Google
+            account.
+          </p>
+
+          <p>
+            Because advertising services are provided by Google,
+            some advertising-related privacy controls are managed
+            directly by Google.
+          </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section id="internet">
+
+          <h2>7. Internet Connection</h2>
+
+          <p>
+            The core game is designed to work locally and does not
+            require an account or our own online game server for
+            normal gameplay.
+          </p>
+
+          <p>
+            However, an Internet connection may be required for
+            services such as:
+          </p>
+
+          <ul>
+            <li>Loading advertisements</li>
+            <li>Google Mobile Ads functionality</li>
+            <li>Third-party service functionality</li>
+            <li>Application updates</li>
+            <li>
+              Other services provided by the Android platform or
+              third-party SDKs
+            </li>
+          </ul>
+
+          <p>
+            When the Application communicates with third-party
+            services, information may be processed by those
+            services according to their own privacy policies.
+          </p>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section id="sharing">
+
+          <h2>8. Sharing of Information</h2>
+
+          <p>
+            StaticVerse does not sell your personal information.
+          </p>
+
+          <p>
+            We do not operate a user account database for Imposter
+            Ko? and do not intentionally transmit ordinary player
+            names, custom words, or tournament information to a
+            StaticVerse server for advertising or profiling
+            purposes.
+          </p>
+
+          <p>
+            However, third-party services integrated into the
+            Application, particularly Google AdMob, may
+            independently process information as necessary to
+            provide their services.
+          </p>
+
+          <p>
+            Information may also be disclosed where reasonably
+            necessary:
+          </p>
+
+          <ul>
+            <li>
+              To comply with applicable law or legal processes
+            </li>
+
+            <li>
+              To respond to lawful requests from government
+              authorities
+            </li>
+
+            <li>
+              To protect the rights, safety, and security of
+              StaticVerse, users, or others
+            </li>
+
+            <li>
+              To detect, prevent, or investigate fraud, abuse, or
+              security issues
+            </li>
+
+            <li>
+              To operate or maintain third-party services used by
+              the Application
+            </li>
+          </ul>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section id="retention">
+
+          <h2>9. Data Retention</h2>
+
+          <h3>Local Game Data</h3>
+
+          <p>
+            Information stored locally by Imposter Ko? remains on
+            your device until it is removed by the Application,
+            overwritten, cleared through the device's application
+            settings, or the Application is uninstalled.
+          </p>
+
+          <p>
+            Because this information is stored locally, StaticVerse
+            does not have direct access to ordinary locally stored
+            game data.
+          </p>
+
+          <h3>Third-Party Data</h3>
+
+          <p>
+            Information processed by Google or other third-party
+            services is subject to their respective retention
+            policies.
+          </p>
+
+          <p>
+            For information about Google's data retention
+            practices, please refer to Google's privacy
+            documentation:
+          </p>
+
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://policies.google.com/privacy
+          </a>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section id="deletion">
+
+          <h2>10. Data Deletion</h2>
+
+          <p>
+            Because Imposter Ko? does not require a user account
+            or maintain a StaticVerse account containing your
+            gameplay information, there is generally no
+            StaticVerse account to delete.
+          </p>
+
+          <p>
+            You can remove locally stored Application data by:
+          </p>
+
+          <ol>
+            <li>Opening Android Settings.</li>
+            <li>Opening Apps or Applications.</li>
+            <li>Selecting Imposter Ko?.</li>
+            <li>Selecting Storage.</li>
+            <li>Clearing the Application's data.</li>
+          </ol>
+
+          <p>
+            You can also uninstall Imposter Ko? from your device.
+          </p>
+
+          <p>
+            Please note that clearing application data or
+            uninstalling the Application may remove locally stored
+            player names, game settings, tournament progress, and
+            other locally stored information.
+          </p>
+
+          <p>
+            Information already processed by third-party services
+            such as Google may be subject to those services' own
+            retention and deletion procedures.
+          </p>
+
+          <div class="contact-card">
+
+            <h3>
+              Privacy questions?
+            </h3>
+
+            <p>
+              For privacy-related questions or requests concerning
+              information handled by StaticVerse, you may contact
+              us at:
+              <br />
+              <a href="mailto:staticverse7@gmail.com">
+                staticverse7@gmail.com
+              </a>
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section id="children">
+
+          <h2>11. Children's Privacy</h2>
+
+          <p>
+            Imposter Ko? is a general-audience social party game
+            and is not designed to knowingly collect personal
+            information from children.
+          </p>
+
+          <p>
+            The Application does not require users to create
+            accounts or submit personal information to StaticVerse.
+          </p>
+
+          <p>
+            We do not knowingly collect personal information from
+            children through a StaticVerse account system.
+          </p>
+
+          <p>
+            If you believe that a child has provided personal
+            information to us directly, please contact us at:
+          </p>
+
+          <p>
+            <a href="mailto:staticverse7@gmail.com">
+              staticverse7@gmail.com
+            </a>
+          </p>
+
+          <p>
+            We will review the request and take appropriate action
+            where required by applicable law.
+          </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section id="security">
+
+          <h2>12. Security</h2>
+
+          <p>
+            We take reasonable measures to protect information
+            handled by the Application.
+          </p>
+
+          <p>
+            Because much of the game's information is stored
+            locally on the user's device, the security of that
+            information also depends on the security of the user's
+            Android device.
+          </p>
+
+          <p>
+            Third-party services integrated into the Application,
+            such as Google AdMob, maintain their own security
+            practices and policies.
+          </p>
+
+          <p>
+            No method of electronic storage or transmission is
+            completely secure, and we cannot guarantee absolute
+            security.
+          </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section id="international">
+
+          <h2>13. International Data Processing</h2>
+
+          <p>
+            Third-party service providers used by the Application
+            may process information on servers located in countries
+            other than the country in which you live.
+          </p>
+
+          <p>
+            For example, Google operates services internationally.
+          </p>
+
+          <p>
+            Where applicable, such processing is governed by the
+            relevant third-party provider's privacy policies and
+            applicable legal requirements.
+          </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section id="rights">
+
+          <h2>14. Your Privacy Rights</h2>
+
+          <p>
+            Depending on where you live, you may have certain
+            rights concerning personal information, including
+            rights to:
+          </p>
+
+          <ul>
+            <li>
+              Request access to personal information
+            </li>
+
+            <li>
+              Request correction of inaccurate information
+            </li>
+
+            <li>
+              Request deletion of personal information
+            </li>
+
+            <li>
+              Object to or restrict certain processing
+            </li>
+
+            <li>
+              Withdraw consent where processing is based on
+              consent
+            </li>
+
+            <li>
+              Exercise rights relating to personalized advertising
+            </li>
+          </ul>
+
+          <p>
+            Because advertising services are provided by third
+            parties, certain requests relating to advertising data
+            may need to be directed to the relevant service
+            provider.
+          </p>
+
+          <p>
+            To contact StaticVerse regarding privacy questions or
+            requests, email:
+          </p>
+
+          <p>
+            <a href="mailto:staticverse7@gmail.com">
+              staticverse7@gmail.com
+            </a>
+          </p>
+
+          <p>
+            We will consider and respond to requests as required
+            by applicable law.
+          </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section id="california">
+
+          <h2>15. California Privacy Rights</h2>
+
+          <p>
+            If you are a California resident, applicable California
+            privacy laws may provide you with certain rights
+            regarding your personal information.
+          </p>
+
+          <p>
+            These rights may include rights to know, access,
+            correct, delete, or opt out of certain uses or sharing
+            of personal information, subject to applicable legal
+            exceptions.
+          </p>
+
+          <p>
+            StaticVerse does not sell your personal information.
+          </p>
+
+          <p>
+            Because Imposter Ko? does not operate a user account
+            database, much of the information entered during
+            gameplay remains locally on the user's device.
+          </p>
+
+          <p>
+            Third-party services such as Google may independently
+            process information subject to their own policies and
+            applicable legal obligations.
+          </p>
+
+          <p>
+            California residents may contact us regarding
+            applicable privacy requests at:
+          </p>
+
+          <p>
+            <a href="mailto:staticverse7@gmail.com">
+              staticverse7@gmail.com
+            </a>
+          </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section id="eea">
+
+          <h2>
+            16. European Economic Area, United Kingdom,
+            and Other Jurisdictions
+          </h2>
+
+          <p>
+            Depending on your location, applicable privacy laws may
+            provide additional rights concerning your personal
+            information.
+          </p>
+
+          <p>
+            Where legally required, processing may be based on
+            consent or another lawful basis recognized by
+            applicable law.
+          </p>
+
+          <p>
+            Where third-party advertising requires consent,
+            appropriate consent mechanisms may be used.
+          </p>
+
+          <p>
+            If you have questions about how your information is
+            handled, contact:
+          </p>
+
+          <p>
+            <a href="mailto:staticverse7@gmail.com">
+              staticverse7@gmail.com
+            </a>
+          </p>
+
+        </section>
+
+
+        <!-- 17 -->
+
+        <section id="third-party">
+
+          <h2>17. Third-Party Privacy Policies</h2>
+
+          <p>
+            Imposter Ko? uses third-party services that may process
+            information independently of StaticVerse.
+          </p>
+
+          <p>
+            The primary third-party service currently used for
+            advertising is:
+          </p>
+
+          <div class="service-card">
+
+            <div class="service-card-title">
+              <span class="service-dot"></span>
+              Google AdMob
+            </div>
+
+            <a
+              href="https://policies.google.com/technologies/partner-sites"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://policies.google.com/technologies/partner-sites
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-card-title">
+              <span class="service-dot"></span>
+              Google Privacy Policy
+            </div>
+
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://policies.google.com/privacy
+            </a>
+
+          </div>
+
+          <p>
+            We encourage users to review Google's privacy policies
+            to understand how Google processes information through
+            its services.
+          </p>
+
+        </section>
+
+
+        <!-- 18 -->
+
+        <section id="changes">
+
+          <h2>18. Changes to This Privacy Policy</h2>
+
+          <p>
+            We may update this Privacy Policy when the
+            Application's features, services, legal requirements,
+            or data practices change.
+          </p>
+
+          <p>
+            When we make changes, we will update the
+            <strong>Effective Date</strong> at the beginning of
+            this Privacy Policy.
+          </p>
+
+          <p>
+            The latest version will be made available through the
+            Application's Privacy Policy link.
+          </p>
+
+          <p>
+            Your continued use of Imposter Ko? after an updated
+            Privacy Policy becomes effective means that you
+            acknowledge the updated policy to the extent permitted
+            by applicable law.
+          </p>
+
+        </section>
+
+
+        <!-- 19 -->
+
+        <section id="contact">
+
+          <h2>19. Contact Us</h2>
+
+          <p>
+            If you have any questions, concerns, or requests
+            regarding this Privacy Policy or the privacy practices
+            of Imposter Ko?, please contact us:
+          </p>
+
+          <div class="contact-card">
+
+            <h3>
+              StaticVerse
+            </h3>
+
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:staticverse7@gmail.com">
+                staticverse7@gmail.com
+              </a>
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- 20 -->
+
+        <section id="about-game">
+
+          <h2>20. About Imposter Ko?</h2>
+
+          <p>
+            Imposter Ko? was created to make the classic Imposter
+            party game feel more personal, familiar, and fun.
+          </p>
+
+          <div class="feature-list">
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🌏
+              </div>
+
+              <strong>
+                Country-Specific Words
+              </strong>
+
+              <span>
+                Play with words designed around different regions,
+                including Nepal, India, and Global packs.
+              </span>
+
+            </div>
+
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🎨
+              </div>
+
+              <strong>
+                Custom Mode
+              </strong>
+
+              <span>
+                Create your own secret word and hint for games
+                with friends, family, college groups, or
+                workplaces.
+              </span>
+
+            </div>
+
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🏆
+              </div>
+
+              <strong>
+                Tournament Mode
+              </strong>
+
+              <span>
+                Compete across multiple rounds, earn points, and
+                find out who is best at spotting the imposter.
+              </span>
+
+            </div>
+
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🎮
+              </div>
+
+              <strong>
+                Pass-the-Phone Gameplay
+              </strong>
+
+              <span>
+                One device. One room. Everyone gets a turn.
+              </span>
+
+            </div>
+
+          </div>
+
+          <p>
+            Our goal is to keep Imposter Ko? simple, social, and
+            fun while respecting the privacy of our players.
+          </p>
+
+        </section>
+
+
+        <hr />
+
+        <p>
+          <strong>Effective Date:</strong>
+          August 8, 2026
+        </p>
+
+        <p>
+          <strong>© 2026 StaticVerse. All rights reserved.</strong>
+        </p>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+
+        <div class="footer-brand">
+          IMPOSTER KO? · STATICVERSE
+        </div>
+
+        <div class="footer-copy">
+          Privacy Policy · Effective August 8, 2026
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+        © 2026 StaticVerse.<br />
+        All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
